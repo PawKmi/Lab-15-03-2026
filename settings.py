@@ -1,10 +1,11 @@
-from pydantic_settings import BaseSettings
 from pydantic import field_validator
+from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
     ENVIRONMENT: str
     APP_NAME: str
+    MY_SECRET_KEY: str
 
     @field_validator("ENVIRONMENT")
     @classmethod
