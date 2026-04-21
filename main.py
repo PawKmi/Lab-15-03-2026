@@ -25,13 +25,13 @@ if __name__ == "__main__":
     parser.add_argument("--environment", type=str, default="dev")
     args = parser.parse_args()
 
-    # 1. Wczytaj env (np. dev/test/prod)
+
     export_envs(args.environment)
 
-    # 2. Wczytaj sekrety z pliku YAML
+
     load_secrets()
 
-    # 3. Zainicjalizuj Settings (Pydantic sprawdzi, czy wszystko jest)
+
     settings = Settings()
 
     print("APP_NAME:   ", settings.APP_NAME)
