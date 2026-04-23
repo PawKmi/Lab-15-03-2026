@@ -25,12 +25,9 @@ if __name__ == "__main__":
     parser.add_argument("--environment", type=str, default="dev")
     args = parser.parse_args()
 
-
     export_envs(args.environment)
 
-
     load_secrets()
-
 
     settings = Settings()
 

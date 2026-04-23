@@ -1,4 +1,8 @@
-from inference import load_classifier, load_encoder, predict_sentiment
+from sentiment_api.inference import (
+    load_classifier,
+    load_encoder,
+    predict_sentiment,
+)
 
 
 def test_model_loads():

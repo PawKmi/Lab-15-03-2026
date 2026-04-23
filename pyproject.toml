@@ -19,3 +19,8 @@ dependencies = [
     "sops>=1.18",
     "uvicorn>=0.41.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "sentiment-api",
+]
